@@ -25,7 +25,7 @@ const Modal = (props) => {
             <input type="checkbox" onChange={onCheckHandler} /> 더 이상 광고 보지 않기
           </label>
         </footer>
-      </div>
+      </div>{" "}
     </div>
   );
 };
