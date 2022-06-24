@@ -4,7 +4,13 @@ import Modal from "./Components/Modal";
 import AvImg from "../src/Assets/av.jpg";
 
 function App() {
-  const [modal, setModal] = useState(false);
+  const [modal, setModal] = useState(true);
+
+  useState(() => {
+    setTimeout(() => {
+      setModal(false);
+    }, 0);
+  });
 
   const modalHandler = () => {
     setModal(true);
