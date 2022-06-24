@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Modal from "./Components/Modal";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [modal, setModal] = useState(false);
+
+  const modalHandler = () => {
+    setModal(true);
+  };
+
+  return !modal ? <Modal modal={modalHandler} /> : <div className="App">popup 시작하기</div>;
 }
 
 export default App;
