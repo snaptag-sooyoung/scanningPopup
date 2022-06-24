@@ -11,7 +11,7 @@
 .modal {
   position: fixed;
   background-color: lightgray;
-  top: 10vh;
+  top: 20vh;
   left: 10%;
   width: 80%;
   z-index: 10;
@@ -19,18 +19,18 @@
 }
 
 .header {
-  height: 3rem;
+  height: 5vh;
   padding: 1rem;
 }
 
 .content {
-  height: 5rem;
+  height: 30vh;
   padding: 1rem;
 }
 
 .footer {
   display: flex;
   align-items: center;
-  height: 3rem;
+  height: 5vh;
   padding: 1rem;
 }
