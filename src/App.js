@@ -15,7 +15,7 @@ function App() {
   ) : (
     <div className="App">
       <div className="container">
-        <img src={AvImg} />
+        <img src={AvImg} alt="describe img" />
       </div>
     </div>
   );
